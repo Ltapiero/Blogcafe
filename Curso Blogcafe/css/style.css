@@ -1,0 +1,432 @@
+:root{
+    --fuenteHeading:'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+
+    --primario:#3a3a3a;
+    --blanco: #ffffff;
+    --negro: #000000;
+
+}
+
+html{
+    box-sizing:  border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/* globales */
+.contenedor{
+    max-width: 110rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4{
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
+}
+
+h1{
+    font-size: 4.8rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3.2rem;
+}
+
+h4{
+    font-size: 2.8rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* utilidades */
+
+.no-margin{
+    margin: 0;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+
+/* header */
+.webp .header{
+    background-image: url(../img/banner.webp);
+}
+.webp .header{
+    background-image: url(../img/banner.jpg);
+}
+
+.header{
+    min-height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@media (min-width: 768px) {
+    .header{
+        height: 80rem;
+    }
+}
+
+/* header nosotros */
+
+.header__nosotros{
+    min-height: 50rem;
+}
+
+.header__texto{
+    text-align: center;
+    color: var(--blanco);
+}
+
+.header__texto h2{
+    line-height: 1.5;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+    font-size: 3rem;
+}
+
+@media (min-width: 768px) {
+    .header__texto{
+        margin-top: 20rem;
+    }
+
+    .header__texto h2{
+        font-size: 6rem;
+        margin-bottom: 1rem;
+    }
+    
+    .header__texto p{
+        margin-top: 1rem;
+    }
+} 
+
+.barra{
+
+padding-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+} 
+
+.logo{
+    color: var(--blanco);
+    text-align: center;
+}
+
+.logo__nombre{
+    font-weight: 400;
+}
+
+.logo__bold{
+    font-weight: 700;
+}
+
+.navegacion{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+@media (min-width: 768px) {
+    .navegacion{
+        display: flex;
+        gap: 2rem;
+    }
+} 
+
+.navegacion__enlace{
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
+}
+
+.botones{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    .botones{
+        margin-top: 8rem;
+    }
+} 
+
+.boton--primario{
+    background-color: var(--blanco);
+    color: var(--negro);
+    font-weight: 600;
+    font-size: 1.8rem;
+    padding: .6rem 1.5rem;
+    border: 2px solid var(--blanco);
+    transition: .5s;
+}
+
+.boton--primario:hover,
+.boton--secundario:hover,
+.boton--terciario:hover{
+    cursor: pointer;
+}
+
+.boton:hover{
+    background-color: transparent;
+    color: var(--blanco);
+}
+
+.boton--secundario{
+    background-color: transparent;
+    color: var(--blanco);
+    font-weight: 600;
+    font-size: 1.8rem;
+    padding: .6rem 1.5rem;
+    border: 2px solid var(--blanco);
+}
+
+.boton--terciario{
+    display: block;
+    font-family: var(--fuenteHeading);
+    background-color: var(--negro);
+    color: var(--blanco);
+    font-weight: 600;
+    font-size: 1.8rem;
+    padding: .6rem 1.5rem;
+    border: 2px solid var(--negro);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.boton--cursos{
+    background-color: var(--primario);
+    border: var(--primario);
+}
+
+
+@media (min-width: 768px) {
+    .boton--terciario{
+        display: inline-block;
+    }
+} 
+
+/* banner */
+
+.banner{
+    background-color: var(--blanco);
+    margin-top: -6rem;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 79px -31px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 0px 79px -31px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 79px -31px rgba(0,0,0,0.4);
+}
+
+.banner__informacion{
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 3rem;
+
+}
+
+.banner__informacion h3{
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+/* blog */
+.contenido-principal{
+    margin-top: 6rem;
+}
+
+@media (min-width: 768px) {
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+} 
+
+.entrada{
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 2rem;
+}
+
+.entrada:last-of-type{
+    border: none;
+    margin-bottom: 0;
+}
+
+/* cursos y talleres */
+
+.cursos{
+    list-style: none;
+}
+
+.cursos__widget{
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 2rem; 
+}
+
+.cursos__widget:last-of-type{
+    border: none;
+    margin: none;
+}   
+
+.cursos__widget__label{
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+}
+
+.cursos__widget__info{
+    font-weight: 400;
+}
+
+.cursos__widget__label,
+.cursos__widget__info{
+    font-size: 2rem;
+}
+
+/* footer */
+
+.footer{
+    background-color: var(--negro);
+}
+
+@media (min-width: 768px) {
+    .barra__footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem;
+    }
+} 
+
+.barra__footer{
+    padding: 3rem;
+}
+.footer__logo{
+    color: var(--blanco);
+    text-align: center;
+}
+
+/* sobre nosotros */
+
+.sobre-nosotros{
+    margin: 7rem 0;
+}
+
+@media (min-width: 768px) {
+    .sobre-nosotros{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4rem;
+        align-items: center;
+    }
+}   
+/* curso */
+
+.curso{
+    padding: 3rem 0 ;
+    border-bottom: 1px solid #e2e2e2;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+    .curso{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+} 
+
+.curso:last-of-type{
+    border: none;
+}
+
+.curso__label{
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+}
+
+.curso__info{
+    font-weight: 400;
+}
+
+.curso__label,
+.curso__info{
+    font-size: 2rem;
+}
+
+.entrada__blog{
+    margin-top: 10rem;
+}
+
+/* contacto */
+
+.contacto-bg{
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    margin-top: 10rem;
+
+}
+
+.formulario{
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.campo__label{
+    flex: 0 0 9rem;
+    text-align: right;
+
+}
+
+.campo__field{
+    flex: 1;
+    border: .5px solid #adadad;
+}
+
+.campo__field--textarea{
+    height: 200px;
+}
