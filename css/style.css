@@ -408,8 +408,20 @@ padding-top: 4rem;
     background-color: var(--blanco);
     margin: -5rem auto 0 auto;
     width: 95%;
-    padding: 5rem;
+    padding: 4rem 1rem;
 }
+
+@media (min-width: 768px) {
+    .formulario{
+        background-color: var(--blanco);
+        margin: -5rem auto 0 auto;
+        width: 95%;
+        padding: 5rem;
+    }
+} 
+
+
+
 
 .campo{
     display: flex;
@@ -418,10 +430,17 @@ padding-top: 4rem;
 }
 
 .campo__label{
-    flex: 0 0 9rem;
+    flex: 0 0 7rem;
     text-align: right;
 
 }
+
+@media (min-width: 768px) {
+    .campo__label{
+        flex: 0 0 9rem;
+        text-align: right;
+    }
+} 
 
 .campo__field{
     flex: 1;
